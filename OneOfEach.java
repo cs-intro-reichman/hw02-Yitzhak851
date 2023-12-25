@@ -7,10 +7,9 @@ public class OneOfEach {
 		boolean itsAboy = false;
 		boolean itsAgirl = false;
 		int count = 0;
-		double rnd = Math.random();
 		
 		while ((itsAgirl && itsAboy) == false) {
-			if (rnd > 0.5) {
+			if (Math.random() > 0.5) {
 				System.out.print("g ");
 				itsAgirl = true;
 			} else {
