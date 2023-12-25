@@ -1,0 +1,174 @@
+{
+    "tests": [
+      {
+        "name": "Divisors test 18",
+        "setup": "javac Divisors.java",
+        "run": "java Divisors 18",
+        "input": "",
+        "output": "1\r\n2\r\n3\r\n6\r\n9\r\n18",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "Divisors test 239",
+        "setup": "javac Divisors.java",
+        "run": "java Divisors 239",
+        "input": "",
+        "output": "1\r\n239",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 3
+      },
+      {
+        "name": "Divisors test 20",
+        "setup": "javac Divisors.java",
+        "run": "java Divisors 20",
+        "input": "",
+        "output": "1\r\n2\r\n4\r\n5\r\n10\r\n20",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "InOrder test",
+        "setup": "javac InOrderTest.java",
+        "run": "java InOrderTest",
+        "input": "",
+        "output": "All tests passed!",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "Reverse Test abc",
+        "setup": "javac Reverse.java",
+        "run": "java Reverse abc",
+        "input": "",
+        "output": "cba\nThe middle character is b\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 2
+      },
+      {
+        "name": "Reverse Test abcxyz",
+        "setup": "javac Reverse.java",
+        "run": "java Reverse abcxyz",
+        "input": "",
+        "output": "zyxcba\nThe middle character is c\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 3
+      },
+      {
+        "name": "Reverse Test testing",
+        "setup": "javac Reverse.java",
+        "run": "java Reverse testing",
+        "input": "",
+        "output": "gnitset\nThe middle character is t\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "Perfect Test 6",
+        "setup": "javac Perfect.java",
+        "run": "java Perfect 6",
+        "input": "",
+        "output": "6 is a perfect number since 6 = 1 + 2 + 3\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "Perfect Test 8",
+        "setup": "javac Perfect.java",
+        "run": "java Perfect 8",
+        "input": "",
+        "output": "8 is not a perfect number\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "Perfect Test 28",
+        "setup": "javac Perfect.java",
+        "run": "java Perfect 28",
+        "input": "",
+        "output": "28 is a perfect number since 28 = 1 + 2 + 4 + 7 + 14\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "DamkaBoard Test 4",
+        "setup": "javac DamkaBoard.java",
+        "run": "java DamkaBoard 4",
+        "input": "",
+        "output": "* * * * \n * * * *\n* * * * \n * * * *\n",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "DamkaBoard Test 6",
+        "setup": "javac DamkaBoard.java",
+        "run": "java DamkaBoard 6",
+        "input": "",
+        "output": "* * * * * * \n * * * * * *\n* * * * * * \n * * * * * *\n* * * * * * \n * * * * * *\n",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "DamkaBoard Test 3",
+        "setup": "javac DamkaBoard.java",
+        "run": "java DamkaBoard 3",
+        "input": "",
+        "output": "* * * \n * * *\n* * * \n",
+        "comparison": "included",
+        "timeout": 10,
+        "points": 5
+      },
+      {
+        "name": "OneOfEachStats Seed Test 10 7",
+        "setup": "javac OneOfEachStats.java",
+        "run": "java OneOfEachStats 10 7",
+        "input": "",
+        "output": "Average: 2.7 children to get at least one of each gender.\nNumber of families with 2 children: 4\nNumber of families with 3 children: 5\nNumber of families with 4 or more children: 1\nThe most common number of children is 3.\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "OneOfEachStats Seed Test 100 99",
+        "setup": "javac OneOfEachStats.java",
+        "run": "java OneOfEachStats 100 99",
+        "input": "",
+        "output": "Average: 2.99 children to get at least one of each gender.\nNumber of families with 2 children: 51\nNumber of families with 3 children: 24\nNumber of families with 4 or more children: 25\nThe most common number of children is 2.\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "OneOfEachStats Seed Test 1000 99",
+        "setup": "javac OneOfEachStats.java",
+        "run": "java OneOfEachStats 1000 99",
+        "input": "",
+        "output": "Average: 3.036 children to get at least one of each gender.\nNumber of families with 2 children: 485\nNumber of families with 3 children: 248\nNumber of families with 4 or more children: 267\nThe most common number of children is 2.\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 10
+      },
+      {
+        "name": "OneOfEachStats Seed Test 1000 42",
+        "setup": "javac OneOfEachStats.java",
+        "run": "java OneOfEachStats 1000 42",
+        "input": "",
+        "output": "Average: 3.013 children to get at least one of each gender.\nNumber of families with 2 children: 509\nNumber of families with 3 children: 227\nNumber of families with 4 or more children: 264\nThe most common number of children is 2.\n",
+        "comparison": "exact",
+        "timeout": 10,
+        "points": 10
+      }
+    ]
+  }
