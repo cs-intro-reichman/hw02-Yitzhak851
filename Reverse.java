@@ -7,7 +7,7 @@ public class Reverse {
 		System.out.println();
 		int middleIndex;
 		if ((word.length() % 2) == 0) {
-			middleIndex = (word.length() / 2) + 1;
+			middleIndex = (word.length() / 2) - 1;
 		} else {
 			middleIndex = (word.length() / 2);
 		}
