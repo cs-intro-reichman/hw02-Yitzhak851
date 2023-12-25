@@ -5,13 +5,7 @@ public class Reverse {
 			System.out.print(word.charAt(i));
 		}
 		System.out.println();
-		int middleIndex;
-		if ((word.length() % 2) == 0) {
-			middleIndex = (word.length() / 2) - 1;
-		} else {
-			middleIndex = (word.length() / 2);
-		}
-		
+		int middleIndex = word.length() / 2;	
 		System.out.println("The middle character is " + word.charAt(middleIndex));
 	}
 }
