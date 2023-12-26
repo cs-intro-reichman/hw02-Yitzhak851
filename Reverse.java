@@ -8,7 +8,7 @@ public class Reverse {
 		if (word_length == 0) {
 			System.out.println("");
 		} else if (word_length % 2 == 0) {
-			middle_index = (word_length / 2) + 1 ;
+			middle_index = (word_length / 2) - 1 ;
 		} else if (word_length % 2 != 0) {
 			middle_index = (word_length / 2);
 		}
