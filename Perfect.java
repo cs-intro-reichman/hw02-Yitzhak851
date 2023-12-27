@@ -19,7 +19,7 @@ public class Perfect {
 			perfectMessage += "1";
 			for (int i = 2; i < number; i++) {
 				if (number % i == 0) {
-					perfectMessage += " +" + i ;
+					perfectMessage += " + " + i ;
 				}
 			}
 			System.out.print(perfectMessage); 
