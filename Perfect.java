@@ -6,11 +6,16 @@ public class Perfect {
 	public static void main(String[] args) {
 		int number = Integer.parseInt(args[0]);
 		int sum = 0;
+		String str;
 		for (int i = 1; i < number; i++) { 
 			if ((number % i) == 0) { 
+				str = "" + i;
 				sum += i;
 			}
 		}
+		
+		// string str - if sum==number - loop - init the divisors to str 
+
 		if (sum == number) {
 			System.out.print(number + " is a perfect number since " + number + " = ");
 			for (int i = 1 ; i < number; i++) { 
@@ -19,12 +24,10 @@ public class Perfect {
 					count++;
 					System.out.print(i); // 1 , 2 , 3
 				}
-				if (count < 2 ) {
-					System.out.print( " + "); // " + " , " + "
-				}
 			}
 		} else {
 			System.out.println(number + " is not a perfect number");
 		}
+		System.out.println();
 	}
 }
