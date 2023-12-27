@@ -17,7 +17,6 @@ public class OneOfEachStats {
 				} else {
 					itsAboy = true;
 				}
-				p = Math.random();
 				count++;
 			}
 			if (count == 2) {
@@ -31,6 +30,7 @@ public class OneOfEachStats {
 			sum1 = (sum1 + count);
 			// restart to the variables count
 			count = 0;
+			p = Math.random();
 		}
 		double summerize = sum1;
 		double numOfFamily = T;
