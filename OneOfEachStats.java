@@ -1,10 +1,12 @@
+import java.util.Random;
 public class OneOfEachStats {
 	public static void main(String[] args) {
-		// declrate
-		int T, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
+		int T, seed, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
 		double p = Math.random();
-		// initional
 		T = Integer.parseInt(args[0]);
+		seed = Integer.parseInt(args[1]);
+		Random generator = new Random(seed);
+		p = generator.nextDouble();
 		// run from 0 - T
 		for (int i = 1; i <= T; i++) {
 			// declrate + initional
@@ -17,6 +19,7 @@ public class OneOfEachStats {
 				} else {
 					itsAboy = true;
 				}
+				p = generator.nextDouble();
 				count++;
 			}
 			if (count == 2) {
@@ -26,15 +29,11 @@ public class OneOfEachStats {
 			} else if (count >= 4) {
 				sum4++;
 			}
-			// sum of all the children at all the families
-			sum1 = (sum1 + count);
-			// restart to the variables count
+			sum1 += count;
 			count = 0;
-			p = Math.random();
 		}
-		double summerize = sum1;
-		double numOfFamily = T;
-		System.out.println("Average: " + (summerize / numOfFamily) + " children to get at least one of each gender.");
+		double avg = sum1/T;
+		System.out.println("Average: " + (avg) + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + sum2);
 		System.out.println("Number of families with 3 children: " + sum3);
 		System.out.println("Number of families with 4 children: " + sum4);
