@@ -1,4 +1,5 @@
 import java.util.Random;
+
 public class OneOfEachStats {
 	public static void main(String[] args) {
 		int T, seed, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
@@ -9,9 +10,7 @@ public class OneOfEachStats {
 		p = generator.nextDouble();
 		// run from 0 - T
 		for (int i = 1; i <= T; i++) {
-			// declrate + initional
 			boolean itsAboy = false, itsAgirl = false;
-			// count the num of children at every family
 			int count = 0;
 			while ((itsAgirl && itsAboy) == false) {
 				if (p > 0.5) {
@@ -30,9 +29,8 @@ public class OneOfEachStats {
 				sum4++;
 			}
 			sum1 += count;
-			count = 0;
 		}
-		double avg = sum1/T;
+		double avg = (double) (sum1 / T);
 		System.out.println("Average: " + (avg) + " children to get at least one of each gender.");
 		System.out.println("Number of families with 2 children: " + sum2);
 		System.out.println("Number of families with 3 children: " + sum3);
