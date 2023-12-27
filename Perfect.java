@@ -1,33 +1,30 @@
-/**
- * Gets a command-line argument (int), and chekcs if the given number is
- * perfect.
- */
 public class Perfect {
 	public static void main(String[] args) {
-		int number = Integer.parseInt(args[0]); // get 6 or 8
-		int sum = 0;
-		String str;
-		for (int i = 1; i < number; i++) { 
-			if ((number % i) == 0) { 
-				str = "" + i;
+		// declrate variables
+		String perfectMessage, notperfectMessage;
+		int number, sum;
+		// initional variables
+		number = Integer.parseInt(args[0]);
+		sum = 0;
+		perfectMessage =  " is a perfect number since " + number + " = ";
+		notperfectMessage = number + " is not a perfect number";
+		// for loop- checking the sum of the integer divisor of the num
+		for (int i = 1; i < number; i++) {
+			if ((number % i) == 0) {
 				sum += i;
 			}
 		}
-		
-		// string str - if sum==number - loop - init the divisors to str 
-
+		// checking - if sum==number - True=> print perfect otherwise print not
 		if (sum == number) {
-			System.out.print(number + " is a perfect number since " + number + " = ");
-			for (int i = 1 ; i < number; i++) { 
-				int count = 0;
+			perfectMessage += "1";
+			for (int i = 2; i < number; i++) {
 				if (number % i == 0) {
-					count++;
-					System.out.print(i); // 1 , 2 , 3
+					perfectMessage += " +" + i ;
 				}
 			}
+			System.out.print(perfectMessage); 
 		} else {
-			System.out.println(number + " is not a perfect number");
+			System.out.println(notperfectMessage);
 		}
-		System.out.println();
 	}
 }
