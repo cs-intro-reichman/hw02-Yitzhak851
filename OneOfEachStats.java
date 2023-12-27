@@ -1,17 +1,14 @@
 public class OneOfEachStats {
 	public static void main(String[] args) {
 		// declrate
-		int T, sum1, sum2, sum3, sum4;
+		int T, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
 		// initional
 		T = Integer.parseInt(args[0]);
-		sum1 = 0;
-		sum2 = 0;
-		sum3 = 0;
-		sum4 = 0;
 		// run from 0 - T
-		for (int i = 0; i < T; i++) {
+		for (int i = 1; i <= T; i++) {
 			// declrate + initional
 			boolean itsAboy = false, itsAgirl = false;
+			// count the num of children at every family
 			int count = 0;
 			while ((itsAgirl && itsAboy) == false) {
 				if (Math.random() > 0.5) {
@@ -28,7 +25,10 @@ public class OneOfEachStats {
 			} else if (count >= 4) {
 				sum4++;
 			}
+			// sum of all the children at all the families
 			sum1 = (sum1 + count);
+			// restart to the variables count
+			count = 0;
 		}
 		double summerize = sum1;
 		double numOfFamily = T;
