@@ -20,7 +20,6 @@ public class OneOfEachStats {
 				} else {
 					itsAboy = true;
 				}
-				p = generator.nextDouble();
 				count++;
 			}
 			if (count == 2) {
