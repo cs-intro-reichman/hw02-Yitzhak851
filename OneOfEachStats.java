@@ -6,10 +6,7 @@ public class OneOfEachStats {
 		double p = Math.random();
 		T = Integer.parseInt(args[0]);
 		seed = Integer.parseInt(args[1]);
-
 		Random generator = new Random(seed);
-
-		// run from 0 - T
 		for (int i = 1; i <= T; i++) {
 			boolean itsAboy = false, itsAgirl = false;
 			int count = 0;
