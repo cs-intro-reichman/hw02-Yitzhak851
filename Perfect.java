@@ -6,7 +6,7 @@ public class Perfect {
 		// initional variables
 		number = Integer.parseInt(args[0]);
 		sum = 0;
-		perfectMessage = " is a perfect number since " + number + " = ";
+		perfectMessage = number + " is a perfect number since " + number + " = ";
 		notperfectMessage = number + " is not a perfect number";
 		// for loop- checking the sum of the integer divisor of the num
 		for (int i = 1; i < number; i++) {
