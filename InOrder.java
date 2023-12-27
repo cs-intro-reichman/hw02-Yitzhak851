@@ -5,13 +5,13 @@ public class InOrder {
 		num2 = (int) (Math.random() * 10);
 		System.out.print(num1 + " ");
 
-		do {
+		while (num1 <= num2) {
 			System.out.print(num2 + " ");
 			if (num2 >= num1) {
 				num1 = num2;
 				temp = (int) (Math.random() * 10);
 				num2 = temp;
 			}
-		} while (num1 <= num2);
+		}
 	}
 }
