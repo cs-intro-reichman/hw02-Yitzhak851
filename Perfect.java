@@ -4,7 +4,7 @@
  */
 public class Perfect {
 	public static void main(String[] args) {
-		int number = Integer.parseInt(args[0]);
+		int number = Integer.parseInt(args[0]); // get 6 or 8
 		int sum = 0;
 		String str;
 		for (int i = 1; i < number; i++) { 
