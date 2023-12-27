@@ -2,6 +2,7 @@ public class OneOfEachStats {
 	public static void main(String[] args) {
 		// declrate
 		int T, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
+		double p = Math.random();
 		// initional
 		T = Integer.parseInt(args[0]);
 		// run from 0 - T
@@ -11,11 +12,12 @@ public class OneOfEachStats {
 			// count the num of children at every family
 			int count = 0;
 			while ((itsAgirl && itsAboy) == false) {
-				if (Math.random() > 0.5) {
+				if (p > 0.5) {
 					itsAgirl = true;
 				} else {
 					itsAboy = true;
 				}
+				p = Math.random();
 				count++;
 			}
 			if (count == 2) {
