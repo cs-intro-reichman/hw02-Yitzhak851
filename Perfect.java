@@ -1,3 +1,9 @@
+/**
+ * This class contain a "Perfect" class.
+ * 
+ * @author (Yitzhak baror)
+ * @version (29.12.2023)
+ */
 public class Perfect {
 	public static void main(String[] args) {
 		// declrate variables

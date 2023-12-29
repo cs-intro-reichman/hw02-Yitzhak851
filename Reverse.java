@@ -1,3 +1,9 @@
+/**
+ * This class contain a "Reverse" class.
+ * 
+ * @author (Yitzhak baror)
+ * @version (29.12.2023)
+ */
 public class Reverse {
 	public static void main(String[] args) {
 		// Declrate variables

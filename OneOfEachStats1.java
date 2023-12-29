@@ -1,3 +1,9 @@
+/**
+ * This class contain a "OneOfEachStats1" class.
+ * 
+ * @author (Yitzhak baror)
+ * @version (29.12.2023)
+ */
 public class OneOfEachStats1 {
 	public static void main(String[] args) {
 		int T, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
