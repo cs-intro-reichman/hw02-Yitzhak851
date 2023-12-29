@@ -1,3 +1,9 @@
+/**
+ * This class contain a "OneOfEachStats" class.
+ * 
+ * @author (Yitzhak baror)
+ * @version (29.12.2023)
+ */
 import java.util.Random;
 
 public class OneOfEachStats {

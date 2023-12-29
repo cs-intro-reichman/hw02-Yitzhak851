@@ -1,3 +1,9 @@
+/**
+ * This class contain a "OneOfEach" class.
+ * 
+ * @author (Yitzhak baror)
+ * @version (29.12.2023)
+ */
 public class OneOfEach {
 	public static void main(String[] args) {
 		boolean itsAboy = false, itsAgirl = false;
