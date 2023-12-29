@@ -9,7 +9,8 @@ import java.util.Random;
 public class OneOfEachStats {
 	public static void main(String[] args) {
 		int T, seed, sum1 = 0, sum2 = 0, sum3 = 0, sum4 = 0;
-		// double p = Math.random();
+		double p;
+		//  = Math.random();
 		T = Integer.parseInt(args[0]);
 		seed = Integer.parseInt(args[1]);
 		Random generator = new Random(seed);
