@@ -8,6 +8,7 @@ public class OneOfEach {
 	public static void main(String[] args) {
 		boolean itsAboy = false, itsAgirl = false;
 		int count = 0;
+// logic- if not girl or boy print children 
 		while ((itsAgirl && itsAboy) == false) {
 			if (Math.random() > 0.5) {
 				System.out.print("g ");
