@@ -18,7 +18,7 @@ public class Reverse {
 		} else if (word_length % 2 != 0) {
 			middle_index = (word_length / 2);
 		}
-
+		// for loop - print the word in reverse
 		for (int i = word.length() - 1; i >= 0; i--) {
 			System.out.print(word.charAt(i));
 		}
