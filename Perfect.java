@@ -25,7 +25,7 @@ public class Perfect {
 			perfectMessage += "1";
 			for (int i = 2; i < number; i++) {
 				if (number % i == 0) {
-					perfectMessage += " + " + i;
+					perfectMessage += " + " + i; // #feedback - you could avoid this loop by updating perfectMessage at the loop above.
 				}
 			}
 			System.out.print(perfectMessage);
