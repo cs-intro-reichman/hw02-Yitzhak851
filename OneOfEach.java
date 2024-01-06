@@ -9,7 +9,7 @@ public class OneOfEach {
 		boolean itsAboy = false, itsAgirl = false;
 		int count = 0;
 // logic- if not girl or boy print children 
-		while ((itsAgirl && itsAboy) == false) {
+		while ((itsAgirl && itsAboy) == false) { // #feedback - you can use !(itsAgirl && itsAboy) instead of comparing to false.
 			if (Math.random() > 0.5) {
 				System.out.print("g ");
 				itsAgirl = true;
